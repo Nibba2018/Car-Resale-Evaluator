@@ -35,7 +35,7 @@ background-position: center center;</string>
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <widget class="QComboBox" name="comboBox">
+      <widget class="QComboBox" name="model">
        <property name="geometry">
         <rect>
          <x>250</x>
@@ -48,7 +48,7 @@ background-position: center center;</string>
         <string notr="true">background-color: rgb(255, 255, 255);</string>
        </property>
       </widget>
-      <widget class="QComboBox" name="comboBox_2">
+      <widget class="QComboBox" name="fuelType">
        <property name="geometry">
         <rect>
          <x>460</x>
@@ -61,7 +61,7 @@ background-position: center center;</string>
         <string notr="true">background-color: rgb(255, 255, 255);</string>
        </property>
       </widget>
-      <widget class="QComboBox" name="comboBox_3">
+      <widget class="QComboBox" name="brand">
        <property name="geometry">
         <rect>
          <x>350</x>
@@ -74,7 +74,7 @@ background-position: center center;</string>
         <string notr="true">background-color: rgb(255, 255, 255);</string>
        </property>
       </widget>
-      <widget class="QComboBox" name="comboBox_4">
+      <widget class="QComboBox" name="gearBox">
        <property name="geometry">
         <rect>
          <x>592</x>
@@ -87,7 +87,7 @@ background-position: center center;</string>
         <string notr="true">background-color: rgb(255, 255, 255);</string>
        </property>
       </widget>
-      <widget class="QComboBox" name="comboBox_5">
+      <widget class="QComboBox" name="repairedDamage">
        <property name="geometry">
         <rect>
          <x>140</x>
@@ -155,7 +155,7 @@ background-position: center center;</string>
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Age&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_4">
+      <widget class="QLabel" name="price">
        <property name="geometry">
         <rect>
          <x>200</x>
@@ -178,10 +178,10 @@ background-position: center center;</string>
         </rect>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;00.00%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;86.45%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit">
+      <widget class="QLineEdit" name="power">
        <property name="geometry">
         <rect>
          <x>400</x>
@@ -194,7 +194,7 @@ background-position: center center;</string>
         <string notr="true">background-color: rgb(255, 255, 255);</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_2">
+      <widget class="QLineEdit" name="distance">
        <property name="geometry">
         <rect>
          <x>400</x>
@@ -207,7 +207,7 @@ background-position: center center;</string>
         <string notr="true">background-color: rgb(255, 255, 255);</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_3">
+      <widget class="QLineEdit" name="age">
        <property name="geometry">
         <rect>
          <x>400</x>
