@@ -21,4 +21,4 @@ Two different regression algorithms were applied for this problem:
 
 Random forests algorithm was analysed to be more efficient than Logistic regression for this particular problem.
 
-Data Analysis and Model building is provided in this [notebook]("./Pre-owned Cars Analysis.ipynb").
+Data Analysis and Model building is provided in this [notebook](https://github.com/Nibba2018/Car-Resale-Evaluator/blob/master/Pre-owned%20Cars%20Analysis.ipynb).
