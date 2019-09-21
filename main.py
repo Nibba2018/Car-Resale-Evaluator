@@ -1,19 +1,21 @@
 import joblib
-from PyQt5 import QtWidgets, uic
+from PyQt5 import QtWidgets, uic, QtCore
 import sys
 import main_rc
 import pickle as pk
 import pandas as pd
 import numpy as np
+from math import exp
 
 car_model = joblib.load("rf_cars.joblib")
 with open("col_names.pkl", "rb") as f:
     features = pk.load(f)
 
 class Ui(QtWidgets.QMainWindow):
-    def __init__(self):
+    def __init__(self, MainWindow):
         super(Ui, self).__init__()
         uic.loadUi('main.ui', self)
+        self.mainWindow = MainWindow
         self.evaluate.clicked.connect(self.evaluation)
         self.setupUI()
         self.show()
@@ -84,11 +86,16 @@ class Ui(QtWidgets.QMainWindow):
 
         print(vehicleType, model, fuelType, brand, repDamage, gearBox, power, distance, age)
 
-        print(query)
+        print(len(query))
 
         result = car_model.predict(query)
-        print(result)
+        result = exp(result)
+
+        _translate = QtCore.QCoreApplication.translate
+        self.price.setText(_translate("self.mainWindow", f"<html><head/><body><p align=\"center\"><span style=\" font-size:20pt; font-weight:600; color:#00ff00;\">{str(round(result, 2))}</span></p></body></html>"))
+        #self.price.setText(str(round(result, 2)))
 
 app = QtWidgets.QApplication(sys.argv)
-window = Ui()
+MainWindow = QtWidgets.QMainWindow()
+window = Ui(MainWindow)
 app.exec_()
